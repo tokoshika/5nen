@@ -4,19 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>5年音楽</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <br/>
+    <br />
     <div class="main-container">
       <h1>5年生音楽</h1>
-      <hr/>
-      <br/>
+      <hr />
+      <br />
       <div class="explane">
-      <h2><span class="red">クリック</span> ⇒再生・停止　　 <span>リロード</span> ⇒頭だし・停止</h2>
-      <br/>
-      
-      
-    </div>
+        <h2>
+          <span class="red">クリック</span> ⇒再生・停止　　
+          <span>リロード</span> ⇒頭だし・停止
+        </h2>
+        <br />
+      </div>
       <button class="reload" onclick="reload()">リロード</button>
       <button class="guam" id="signv">サインはB</button>
       <button class="guam" id="kyofu">強風オールバック</button>
@@ -27,7 +32,6 @@
       <button class="guam" id="india">アールアールアール</button>
       <button class="guam" id="interlude">つなぎの曲</button>
       <button class="guam" id="interlude2">これもつなぎ？</button>
-    </div>
     </div>
 
     <script>
@@ -148,11 +152,11 @@
       const interludebgm = new Audio("./assets/mus08.mp3");
       interlude.addEventListener("click", () => {
         if (isPlaying) {
-            interludebgm.pause();
+          interludebgm.pause();
           isPlaying = false;
           interlude.classList.remove("go");
         } else {
-            interludebgm.play();
+          interludebgm.play();
           isPlaying = true;
           interlude.classList.add("go");
         }
@@ -162,11 +166,11 @@
       const interlude2bgm = new Audio("./assets/mus09.mp3");
       interlude2.addEventListener("click", () => {
         if (isPlaying) {
-            interlude2bgm.pause();
+          interlude2bgm.pause();
           isPlaying = false;
           interlude2.classList.remove("go");
         } else {
-            interlude2bgm.play();
+          interlude2bgm.play();
           isPlaying = true;
           interlude2.classList.add("go");
         }
