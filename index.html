@@ -1,0 +1,176 @@
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5年音楽</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <br/>
+    <div class="main-container">
+      <h1>5年生音楽</h1>
+      <hr/>
+      <br/>
+      <div class="explane">
+      <h2><span class="red">クリック</span> ⇒再生・停止　　 <span>リロード</span> ⇒頭だし・停止</h2>
+      <br/>
+      <hr/>
+      <br/>
+    </div>
+      <button class="reload" onclick="reload()">リロード</button>
+      <button class="guam" id="signv">サインはB</button>
+      <button class="guam" id="kyofu">強風オールバック</button>
+      <button class="guam" id="sankyokume">私は最強だ</button>
+      <button class="guam" id="character">キャラクター</button>
+      <button class="guam" id="dance">ダンスホールカラオケ？</button>
+      <button class="guam" id="dancesong">ダンスホール歌入り</button>
+      <button class="guam" id="india">アールアールアール</button>
+      <button class="guam" id="interlude">つなぎの曲</button>
+      <button class="guam" id="interlude2">これもつなぎ？</button>
+    </div>
+    </div>
+
+    <script>
+      // リロードボタン
+      const reload = () => {
+        // bgm;
+        console.log("ok");
+        window.location.reload();
+      };
+      ///////////////共通設定////////////////////////////////
+      let isPlaying = false;
+      // //////////////サインはV///////////////////////////////
+      const signv = document.getElementById("signv");
+      const signvbgm = new Audio("./assets/mus01.mp3");
+      //   signvbgm.loop = true;
+
+      signv.addEventListener("click", () => {
+        if (isPlaying) {
+          signvbgm.pause();
+          isPlaying = false;
+          signv.classList.remove("go");
+        } else {
+          signvbgm.play();
+          isPlaying = true;
+          signv.classList.add("go");
+        }
+      });
+      // //////////////強風オールバック///////////////////////////////
+      const kyofu = document.getElementById("kyofu");
+      const kyofubgm = new Audio("./assets/mus02.mp3");
+      //   kyofubgm.loop = true;
+
+      kyofu.addEventListener("click", () => {
+        if (isPlaying) {
+          kyofubgm.pause();
+          isPlaying = false;
+          kyofu.classList.remove("go");
+        } else {
+          kyofubgm.play();
+          isPlaying = true;
+          kyofu.classList.add("go");
+        }
+      });
+      // //////////////3曲目///////////////////////////////
+      const sankyokume = document.getElementById("sankyokume");
+      const sankyokumebgm = new Audio("./assets/mus03.mp3");
+      //   kyofubgm.loop = true;
+
+      sankyokume.addEventListener("click", () => {
+        if (isPlaying) {
+          sankyokumebgm.pause();
+          isPlaying = false;
+          sankyokume.classList.remove("go");
+        } else {
+          sankyokumebgm.play();
+          isPlaying = true;
+          sankyokume.classList.add("go");
+        }
+      });
+      // //////////////キャラクター///////////////////////////////
+      const character = document.getElementById("character");
+      const characterbgm = new Audio("./assets/mus04.mp3");
+      character.addEventListener("click", () => {
+        if (isPlaying) {
+          characterbgm.pause();
+          isPlaying = false;
+          character.classList.remove("go");
+        } else {
+          characterbgm.play();
+          isPlaying = true;
+          character.classList.add("go");
+        }
+      });
+      // //////////////ダンスホールカラオケ？///////////////////////////////
+      const dance = document.getElementById("dance");
+      const dancebgm = new Audio("./assets/mus05.mp3");
+      dance.addEventListener("click", () => {
+        if (isPlaying) {
+          dancebgm.pause();
+          isPlaying = false;
+          dance.classList.remove("go");
+        } else {
+          dancebgm.play();
+          isPlaying = true;
+          dance.classList.add("go");
+        }
+      });
+      // //////////////ダンスホール歌入り///////////////////////////////
+      const dancesong = document.getElementById("dancesong");
+      const dancesongbgm = new Audio("./assets/mus06.mp3");
+      dancesong.addEventListener("click", () => {
+        if (isPlaying) {
+          dancesongbgm.pause();
+          isPlaying = false;
+          dancesong.classList.remove("go");
+        } else {
+          dancesongbgm.play();
+          isPlaying = true;
+          dancesong.classList.add("go");
+        }
+      });
+      // //////////////インドのやつ///////////////////////////////
+      const india = document.getElementById("india");
+      const indiabgm = new Audio("./assets/mus07.mp3");
+      india.addEventListener("click", () => {
+        if (isPlaying) {
+          indiabgm.pause();
+          isPlaying = false;
+          india.classList.remove("go");
+        } else {
+          indiabgm.play();
+          isPlaying = true;
+          india.classList.add("go");
+        }
+      });
+      // //////////////インドのやつ///////////////////////////////
+      const interlude = document.getElementById("interlude");
+      const interludebgm = new Audio("./assets/mus08.mp3");
+      interlude.addEventListener("click", () => {
+        if (isPlaying) {
+            interludebgm.pause();
+          isPlaying = false;
+          interlude.classList.remove("go");
+        } else {
+            interludebgm.play();
+          isPlaying = true;
+          interlude.classList.add("go");
+        }
+      });
+      // //////////////インドのやつ///////////////////////////////
+      const interlude2 = document.getElementById("interlude2");
+      const interlude2bgm = new Audio("./assets/mus09.mp3");
+      interlude2.addEventListener("click", () => {
+        if (isPlaying) {
+            interlude2bgm.pause();
+          isPlaying = false;
+          interlude2.classList.remove("go");
+        } else {
+            interlude2bgm.play();
+          isPlaying = true;
+          interlude2.classList.add("go");
+        }
+      });
+    </script>
+  </body>
+</html>

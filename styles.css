@@ -1,0 +1,60 @@
+html {
+  background-color: sandybrown;
+}
+
+h1 {
+  color: rgb(55, 45, 45);
+}
+
+hr {
+  background-color: rgb(180, 111, 52);
+  height: 2px;
+}
+
+.go {
+  color: white;
+  background-color: red;
+}
+
+.stop {
+  color: black;
+}
+
+button {
+  width: 450px;
+  height: 150px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+}
+
+.main-container {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0.5rem;
+}
+h2 {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 0rem;
+}
+
+.reload:hover {
+  background-color: black;
+  color: yellow;
+}
+
+span {
+  color: yellow;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.red {
+  color: white;
+  background-color: red;
+}
